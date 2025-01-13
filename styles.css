@@ -164,6 +164,21 @@ nav .right a span{
     border-radius: 2px;
 }
 
+.skills-section .cell {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-section .cell:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.skills-section .cell img {
+    transition: transform 0.3s ease;
+}
+
+.skills-section .cell:hover img {
+    transform: rotate(10deg);
+}
 /* Section 3: Projects */
 .projects-section {
     padding: 25px 70px;
@@ -420,4 +435,32 @@ nav .right a span{
      .contact-section .group {
         padding: 0 20px;
     }
+}
+/*Animation */
+
+/*Section 1: Hero*/
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent }
+    50% { border-color: var(--text-color) }
+}
+
+.hero-section h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(100);
+    position: relative;
+}
+
+.hero-section .text h2 span.blink {
+    display: inline-block;
+    animation: blink-exclamation 0.8s step-end infinite;
+}
+
+@keyframes blink-exclamation {
+    50% { opacity: 0; }
 }
