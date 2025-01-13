@@ -182,7 +182,7 @@ nav .right a span{
 /* Section 3: Projects */
 .projects-section {
     padding: 25px 70px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     background-color: var(--secondary--color);
 }
 
@@ -194,8 +194,15 @@ nav .right a span{
 
 .project {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
 }
 
 .project-info {
@@ -431,6 +438,25 @@ nav .right a span{
         font-size: 16px;
     }
 
+    /* Section 3: Projects*/
+    .projects-section {
+        padding: 25px 20px;
+    }
+    
+    .project {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .project img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .project-info {
+        text-align: center;
+    }
+
      /* Section 4: Contact */
      .contact-section .group {
         padding: 0 20px;
@@ -458,7 +484,7 @@ nav .right a span{
 
 .hero-section .text h2 span.blink {
     display: inline-block;
-    animation: blink-exclamation 0.8s step-end infinite;
+    animation: blink-exclamation 1.4s step-end infinite;
 }
 
 @keyframes blink-exclamation {
