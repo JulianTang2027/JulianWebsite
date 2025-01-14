@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
 
+    <link rel="icon" type="image/x-icon" href="images/faviconnew.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,74 +13,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
+    <title>Julian</title>
 </head>   
 <body>
     <!-- Navbar -->
-    <nav>   
+    <nav class="fixed-nav">
         <div class="left">
-            <a href="/">Julian Tang</a>
+            <a href="/">JULIAN</a>
         </div>
         <div class="right">
-            <a href="http://github.com" target="_blank" rel="noopener no-referrer">
-                <i class="fa-brands fa-github"></i>
-                <span>Github</span>
-            </a>
-
-            <a href="http://linkedin.com/in/julian-sebastian-tang/" target="_blank" rel="noopener no-referrer">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>Linkedin</span>
-            </a>
-
-            <a href="mailto:JulianTang2027@u.northwestern.edu" target="_blank" rel="noopener no-referrer">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-            </a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#contact">CONTACT</a>
         </div>
     </nav>
+    
+    <!-- Updated hero section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="typing-text">HI, I AM <span class="purple">JULIAN</span> TANG!<span class="cursor">|</span></h1>
+            <p class="title">SOFTWARE ENGINEER</p>
+            <div class="cta-button">
+                <a href="files/JulianTResume.pdf" download class="download-resume">Download Resume</a>
+            </div>
+        </div>
+    </section>
 
-    <main>
-        <!-- Section 1: Hero-->
-        <section class="hero-section">
-            <div class="text">
-                <h2>Hi, I'm Julian!<span class="blink">|</span></h2>
-                <p>I'm a BS/MS computer science student at Northwestern University. I'm interested in graphic design, full-stack software engineering
-                    and Philosophy 😀. In my free time, I like to cook, game, and even make my own games!
-                </p>
-
-                <div class="links">
-                    <a href="#skills">
-                        <i class="fa-solid fa-code"></i>
-                        <span>Skills</span>
-                    </a>
-                    <a href="#projects">
-                        <i class="fa-solid fa-computer"></i>
-                        <span>Projects</span>
-                    </a>
-                    <a href="#experience">
-                        <i class="fa-solid fa-code-branch"></i>
-                        <span>Experience</span>
-                    </a>
-                    <a href="files/JulianTResume.pdf" download>
-                        <i class="fa-solid fa-file"></i>
-                        <span>Resume</span>
-                        </a>
-                    </a>
-                    <a href="#contact">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>Contact</span>
-                    </a>
+    <!-- Section 1: About me -->
+    <section id="about" class="about-section">
+        <h2>ABOUT ME</h2>
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="highlight">I am a sophomore at Northwestern University pursuing a Bachelor of Science /
+                        Master of Science in Computer Science and a Segal Design Certificate, expecting to
+                        graduate in the Summer of 2027. My passion lies at the 
+                        intersection of design and technology, where I strive to create impactful and user-friendly 
+                        experiences that bridge functionality and aesthetics.</p>
+                    
+                    <p>My journey into this space began with my love for cooking. I was introduced to the power 
+                        of design and technology through a product called Meater, which enables precise temperature 
+                        monitoring of meat through an elegant and intuitive interface. This experience opened my 
+                        eyes to how thoughtful design and innovative technology can transform everyday tasks, 
+                        fueling my drive to explore this dynamic intersection further.</p>
+                    
+                    <p>As a member of NUAZN, Northwestern's asian magazine, I contribute to page and graphic design, 
+                        honing my skills in visual storytelling and effective communication. My work reflects a deep 
+                        commitment to combining creativity with precision, a philosophy inspired by Steve Jobs and his 
+                        attention to detail in the Macintosh—particularly his insistence on beautiful typography. Jobs' 
+                        belief that "Design is not just what it looks like and feels like. Design is how it works" 
+                        resonates deeply with me and guides my approach to problem-solving in technology and design.</p>
+                    
+                    <p>Looking ahead, I aim to push the boundaries of what design and technology can achieve together, 
+                        crafting solutions that are not only functional but also delightful and meaningful for users.</p>
                 </div>
             </div>
-            <div class="headshot">
-                <img src="images/steampfp.webp" alt="Julian Tang headshot" width="500px" height="500px">
+            <div class="about-image">
+                <img src="images/JulianPhoto.jpeg" alt="Julian Tang headshot" />
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/julian-sebastian-tang/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:JulianTang2027@u.northwestern.edu" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-        </section>
-
+        </div>
+    </section>
         <!-- Section 2: Skills-->
         <div class="full-width-section">
             <section id = "skills" class = "skills-section">
-                <h2>Skills</h2>
+                <h2>SKILLS</h2>
                 <div class="text">
                 </div>
 
@@ -119,32 +124,74 @@
 
         <!-- Section 3: Projects-->
         <div class="full-width-section">
-        <section id = "projects" class = "projects-section">
-            <h2>Projects</h2>
-            <div class="text">
-            </div>
+            <section id="projects" class="projects-section">
+                <h2>PROJECTS</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/sushiclicker.png" alt="sushi clicker logo">
+                        </div>
+                        <div class="project-content">
+                            <h3>Sushi Clicker</h3>
+                            <h4>Interactive clicker game</h4>
+                            <p>I built a clicker game from scratch in C# using the Unity game engine, with custom graphics, music and art. 
+                                Sushi Clicker was then approved by Steam, and published on the Steam game store, the largest gaming platform on PC. 
+                                Sushi Clicker currently has over 5000 downloads, and has an over 75% positive review rate on Steam.</p>
+                            <a href="https://store.steampowered.com/app/2230590/Sushi_Clicker/" target="_blank" class="learn-more">Learn More →</a>
+                        </div>
+                    </div>
+        
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/cuberun.jpg" alt="cuberun logo">
+                        </div>
+                        <div class="project-content">
+                            <h3>CubeRun</h3>
+                            <h4>Endless runner game</h4>
+                            <p>I built an "endless runner" game from scratch in C# using the Unity game engine, implementing
+                                3D assets and modeling techniques in order to create the game environment.</p>
+                            <a href="#" class="learn-more">Learn More →</a>
+                        </div>
+                    </div>
 
-            <div class="project">
-                <img src="images/sushiclicker.png" alt="sushi clicker logo" width="300px" height="150px">
-                <div class="project-info">
-                    <h3>Sushi Clicker - Interactive clicker game</h3>
-                    <span>I built a clicker game from scratch in C# using the Unity game engine, with custom graphics, music and art. 
-                        Sushi Clicker was then approved by Steam, and published on the Steam game store, the largest gaming platform on PC. 
-                        Sushi Clicker currently has over 5000 downloads, and has an over 75% positive review rate on Steam.
-                    </span>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/python.svg" alt="python logo">
+                        </div>
+                        <div class="project-content">
+                            <h3>NUPython</h3>
+                            <h4>Python Interpreter</h4>
+                            <p>I created a Python interpreter within a C framework, integrating Python syntax and semantics using Backus-Naur Form.
+                                Optimized codebase, enhancing interpreter efficiency for complex Python script execution.
+                                Wrote and refactored 50+ unit tests using Google Test, significantly increasing code coverage by 30%.</p>
+                            <a href="https://github.com/Jay254/NuPy-Interpreter" target="_blank" class="learn-more">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/machinelearning.png" alt="Machine learning logo">
+                        </div>
+                        <div class="project-content">
+                            <h3>Movie Rating Predictor</h3>
+                            <h4>Machine Learning Project</h4>
+                            <p>I led the development of the decision tree aspect of a movie recommendation system in a team of 5. 
+                                Using the ID3 algorithm with pruning, I built a classifier to predict user preferences based on 
+                                features like gender representation, age demographics, and content ratings. The team also explored 
+                                feed-forward neural networks for recommendation generation. To ensure reliability, 
+                                we created and maintained around 30 unit tests, boosting code coverage by 30%. 
+                                The project optimized prediction accuracy and data processing while effectively managing 
+                                complex feature relationships.
+                            </p>
+                            <a href="https://github.com/EJVandegrift/CS349-Final-Project" target="_blank" class="learn-more">Learn More →</a>
+                        </div>
+                    </div>
                 </div>
-                <img src="images/cuberun.jpg" alt="cuberun logo" width="300px" height="150px">
-                <div class="project-info">
-                    <h3>CubeRun - Endless runner game</h3>
-                    <span>I built an "endless runner" game from scratch in C# using the Unity game engine, implementing
-                        3D assets and modeling techniques in order to create the game enivronment.
-                    </span>
-                </div>
-        </section>  
-    </div> 
+            </section>
+        </div>
 
         <!-- Section 4: Education-->
-         <section class="education-section">
+         <section id="education" class="education-section">
             <h2>EDUCATION</h2>
             
             <div class="timeline">
@@ -153,43 +200,42 @@
                     <div class="timeline-dot"></div>
                     <div class="content right">
                         <div class="date">Sept. 2023 - June 2027</div>
-                        <div class="degree">Bachelor of Science / Master of Science in Computer Science, Minor in Philosophy</div>
+                        <div class="degree">Bachelor of Science / Master of Science in Computer Science, Segal Design Certificate</div>
                         <div class="school">NORTHWESTERN UNIVERSITY</div>
                         <div class="location">Evanston, IL, USA</div>
                         <div class="courses">
-                            Data Structures & Algorithms, Agile Software Development, Object-Oriented Programming, 
+                            Data Structures & Algorithms, Scalable Software Systems, Microprocessors, Object-Oriented Programming, 
                             Hardware & Software Computer Systems, Computer Architecture, Machine Learning, 
                             Artificial Intelligence, Database Systems, Calculus, Linear Algebra, Statistics
                         </div>
                     </div>
                 </div>
         
-                <!-- Moringa -->
+                <!-- SPF -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="content left">
-                        <div class="date">Feb. 2023 - Aug. 2023</div>
-                        <div class="degree">Certificate in Full Stack Software Engineering</div>
-                        <div class="school">MORINGA SCHOOL</div>
-                        <div class="location">Nairobi, Kenya</div>
+                        <div class="date">Feb. 2021 - Feb. 2023</div>
+                        <div class="degree">Police Officer's Basic Course (POBC), Sergeant training certification (SGT)</div>
+                        <div class="school">SINGAPORE POLICE FORCE</div>
+                        <div class="location">Singapore</div>
                         <div class="courses">
-                            HTML, CSS, Bootstrap, Tailwind, JavaScript, React.js, Node.js, Ruby, Rails, 
-                            Python, Django, SQL, MySQL, PostgreSQL, Git, Github, Jira, Trello, Ubuntu
+                            Admin, Maintenance, Arms, Policing, Sergeant
                         </div>
                     </div>
                 </div>
         
-                <!-- Litein -->
+                <!-- SJII -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="content right">
-                        <div class="date">Jan. 2018 - April 2022</div>
-                        <div class="degree">High School Diploma</div>
-                        <div class="school">LITEIN HIGH SCHOOL</div>
-                        <div class="location">Litein, Kenya</div>
+                        <div class="date">Jan. 2015 - Nov. 2020</div>
+                        <div class="degree">International Baccalaureate</div>
+                        <div class="school">ST JOSEPH'S INSTITUTION INTERNATIONAL</div>
+                        <div class="location">Singapore</div>
                         <div class="courses">
-                            Calculus, English, Kiswahili, Physics, Chemistry, Biology, Geography, 
-                            History, Christian Religious Education (CRE), Agriculture, Business Studies
+                            Physics, Chemistry and Mathematics (Higher Level)
+                            English, Chinese and Economics (Standard Level)
                         </div>
                     </div>
                 </div>
@@ -197,7 +243,7 @@
         </section>
         <!-- Section 5: Experience-->
         <section class="experience-section" id="experience">
-        <h2>Experience</h2>
+        <h2>EXPERIENCE</h2>
     
         <div class="timeline">
             <div class="timeline-item">
@@ -236,7 +282,7 @@
 
         <!-- Section 6: Contact-->
         <section id = "contact" class = "contact-section">
-            <h2>Contact</h2>
+            <h2>CONTACT</h2>
 
             <div class="group">
                 <div class="text">
@@ -258,5 +304,6 @@
             </div>
         </section>
     </main>
+<script src="script.js"></script>
 </body> 
 </html>
