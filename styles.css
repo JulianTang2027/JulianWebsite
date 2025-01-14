@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Freight+Display+Pro:wght@300;400;500;600;700&display=swap');
+
 :root {
     --text-color: #456268;
     --link-color: #79a3b1;
@@ -17,11 +19,15 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     max-width: 1400px;
     margin: 0 auto;
+}
+
+h1, h2, h3, .hero-section h2 {
+    font-family: 'Freight Display Pro', serif;
 }
 
 .full-width-section {
@@ -220,7 +226,146 @@ nav .right a span{
     font-size: 24px;
     color: var(--secondary-text-color);
 }
-/* Section 4: Experience*/
+
+/* Section 4: Education*/
+
+.education-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: var(--background-color);
+}
+
+.education-section h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+
+.education-section {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background: url('images/northwesternbackground.jpeg') center center/cover no-repeat;
+    color: #fff; /* Make text white for better contrast */
+}
+
+/* Semi-transparent overlay */
+.education-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+/* Make sure content appears above the overlay */
+.education-section h2,
+.education-section .timeline {
+    position: relative;
+    z-index: 2;
+}
+
+/* Update text colors for better contrast */
+.education-section h2,
+.timeline-item .date,
+.timeline-item .degree,
+.timeline-item .school,
+.timeline-item .location,
+.timeline-item .courses {
+    color: #fff;
+}
+
+/* Make timeline line and dots more visible */
+.timeline::before {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.timeline-dot {
+    background-color: #fff;
+}
+
+.timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+/* Vertical timeline line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #c5c5c5;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.timeline-item .content {
+    width: 45%;
+    padding: 0 30px;
+    position: relative;
+}
+
+.timeline-item .content.right {
+    margin-left: 55%;
+    text-align: left;
+}
+
+.timeline-item .content.left {
+    margin-right: 55%;
+    text-align: right;
+}
+
+.timeline-item .date {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.timeline-item .degree {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.timeline-item .school {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.timeline-item .location {
+    color: var(--text-color);
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.timeline-item .courses {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+
+
+/* Section 5: Experience*/
 .experience-section {
     padding: 50px;
     max-width: 1200px;
