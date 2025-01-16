@@ -575,7 +575,7 @@ a {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: var(--text-color);
+    background-color: var(--white);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -597,7 +597,7 @@ a {
     height: 12px;
     right: -6px;
     top: 35px;
-    background-color: var(--text-color);
+    background-color: var(--white);
     border-radius: 50%;
     z-index: 1;
 }
